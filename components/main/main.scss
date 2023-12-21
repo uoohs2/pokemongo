@@ -8,15 +8,14 @@ main {
     background-color: #0f224a;
     margin: 0 auto;
     .heroBox {
-      scroll-snap-align: start;
       display: flex;
       justify-content: center;
       width: 100%;
-      height: 100vh;
-      padding: 40px 200px;
+      padding: 80px 200px 40px 200px;
       .videoBox {
         width: 100%;
         height: 100%;
+        border: 20px solid white;
         video {
           width: 100%;
           height: 100%;

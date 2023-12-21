@@ -12,6 +12,7 @@ header {
     width: 90%;
     height: 100%;
     max-width: 1728px;
+    padding: 0px 20px;
     margin: 0 auto;
     .logoBox {
       display: flex;
@@ -19,7 +20,7 @@ header {
       align-items: center;
       width: 120px;
       height: 100%;
-      padding: 0px 20px;
+      padding: 0px 10px;
       > img {
         width: 70px;
         height: 100%;
@@ -42,6 +43,7 @@ header {
         white-space: nowrap;
         transition: border 0.3s ease;
         &:hover {
+          cursor: pointer;
           border-color: white;
         }
       }
@@ -61,6 +63,12 @@ header {
       background-color: transparent;
       border: none;
       color: #f7cc46;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
   .burger {

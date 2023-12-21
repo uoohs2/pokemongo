@@ -13,6 +13,7 @@ header > .wrapper {
   width: 90%;
   height: 100%;
   max-width: 1728px;
+  padding: 0px 20px;
   margin: 0 auto;
 }
 header > .wrapper .logoBox {
@@ -21,7 +22,7 @@ header > .wrapper .logoBox {
   align-items: center;
   width: 120px;
   height: 100%;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 header > .wrapper .logoBox > img {
   width: 70px;
@@ -47,6 +48,7 @@ header > .wrapper .navbar > li {
   transition: border 0.3s ease;
 }
 header > .wrapper .navbar > li:hover {
+  cursor: pointer;
   border-color: white;
 }
 header .languageBox {
@@ -64,6 +66,12 @@ header .languageBox > button {
   background-color: transparent;
   border: none;
   color: #f7cc46;
+}
+header .languageBox > button:hover {
+  cursor: pointer;
+}
+header .languageBox:hover {
+  cursor: pointer;
 }
 header .burger {
   display: none;
