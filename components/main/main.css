@@ -155,6 +155,10 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.3s linear;
+}
+.container main .news .news-postBox .post .postContent img:hover {
+  transform: scale(1.1);
 }
 .container main .news .news-postBox .post .postContent .postContent-text {
   position: absolute;
