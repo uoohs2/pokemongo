@@ -1,22 +1,11 @@
-.container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: #0c1c3e;
-  scroll-snap-type: y mandatory;
-  overflow: auto;
-}
-.container::-webkit-scrollbar {
-  display: none;
-}
-.container main {
+main {
   position: relative;
   width: 90%;
   height: auto;
   background-color: #0f224a;
   margin: 0 auto;
 }
-.container main .hero {
+main .hero {
   scroll-snap-align: start;
   position: relative;
   display: flex;
@@ -25,17 +14,17 @@
   height: auto;
   padding: 80px 190px 40px 190px;
 }
-.container main .hero .hero-vedio {
+main .hero .hero-vedio {
   width: 100%;
   border: 20px solid white;
 }
-.container main .hero .hero-vedio > video {
+main .hero .hero-vedio > video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container main .hero .hero-videoControls {
+main .hero .hero-videoControls {
   position: absolute;
   right: 225px;
   bottom: 80px;
@@ -45,7 +34,7 @@
   width: 80px;
   height: 80px;
 }
-.container main .hero .hero-videoControls > button {
+main .hero .hero-videoControls > button {
   width: 70px;
   height: 70px;
   border: none;
@@ -55,10 +44,10 @@
   font-size: 40px;
   line-height: 40px;
 }
-.container main .hero .hero-videoControls > button:hover {
+main .hero .hero-videoControls > button:hover {
   cursor: pointer;
 }
-.container main .news {
+main .news {
   scroll-snap-align: start;
   position: relative;
   display: flex;
@@ -70,7 +59,7 @@
   padding: 60px calc(50vw - 675px);
   overflow: hidden;
 }
-.container main .news .news-bg {
+main .news .news-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -80,7 +69,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container main .news .news-animation {
+main .news .news-animation {
   position: absolute;
   opacity: 0;
   transform: scale(0);
@@ -100,26 +89,26 @@
     opacity: 0;
   }
 }
-.container main .news .fire1 {
+main .news .fire1 {
   top: 60px;
   right: 0;
   animation-delay: 1.1s;
 }
-.container main .news .fire2 {
+main .news .fire2 {
   top: 30px;
   left: 100px;
 }
-.container main .news .fire3 {
+main .news .fire3 {
   bottom: -350px;
   left: -200px;
   animation-delay: 0.6s;
 }
-.container main .news .fire4 {
+main .news .fire4 {
   bottom: -80px;
   right: -100px;
   animation-delay: 1.7s;
 }
-.container main .news .news-title {
+main .news .news-title {
   z-index: 1;
   width: 100%;
   margin: 40px 0px 60px 0px;
@@ -128,7 +117,7 @@
   text-align: center;
   color: #18242e;
 }
-.container main .news .news-postBox {
+main .news .news-postBox {
   position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -139,28 +128,28 @@
   width: 100%;
   height: auto;
 }
-.container main .news .news-postBox .post {
+main .news .news-postBox .post {
   width: 100%;
   height: 100%;
   border-radius: 12px;
   overflow: hidden;
 }
-.container main .news .news-postBox .post .postContent {
+main .news .news-postBox .post .postContent {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.container main .news .news-postBox .post .postContent img {
+main .news .news-postBox .post .postContent img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s linear;
 }
-.container main .news .news-postBox .post .postContent img:hover {
+main .news .news-postBox .post .postContent img:hover {
   transform: scale(1.1);
 }
-.container main .news .news-postBox .post .postContent .postContent-text {
+main .news .news-postBox .post .postContent .postContent-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -173,36 +162,36 @@
   font-weight: 700;
   line-height: 1.4;
 }
-.container main .news .news-postBox .post .postContent .postContent-text .date {
+main .news .news-postBox .post .postContent .postContent-text .date {
   font-size: 12px;
   margin-bottom: 4px;
 }
-.container main .news .news-postBox .post .postContent .postContent-text .title {
+main .news .news-postBox .post .postContent .postContent-text .title {
   font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.container main .news .news-postBox .grid1 {
+main .news .news-postBox .grid1 {
   grid-area: 1/1/3/4;
 }
-.container main .news .news-postBox .grid2 {
+main .news .news-postBox .grid2 {
   grid-area: 1/4/3/7;
 }
-.container main .news .news-postBox .grid3 {
+main .news .news-postBox .grid3 {
   grid-area: 3/1/4/3;
 }
-.container main .news .news-postBox .grid4 {
+main .news .news-postBox .grid4 {
   grid-area: 3/3/4/5;
 }
-.container main .news .news-postBox .grid5 {
+main .news .news-postBox .grid5 {
   grid-area: 3/5/4/7;
 }
-.container main .news .news-btn {
+main .news .news-btn {
   z-index: 1;
   margin-top: 50px;
 }
-.container main .news .news-btn a {
+main .news .news-btn a {
   padding: 8px 24px;
   border: 2px solid #0061af;
   border-radius: 999px;
@@ -211,10 +200,10 @@
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-.container main .news .news-btn a:hover {
+main .news .news-btn a:hover {
   background-color: #d1eefd;
 }
-.container main .content {
+main .content {
   scroll-snap-align: start;
   position: relative;
   width: 100%;
@@ -223,35 +212,35 @@
   align-items: center;
   padding: calc(50vw - 675px);
 }
-.container main .content .content-bg {
+main .content .content-bg {
   position: absolute;
   top: 0;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container main .content .left {
+main .content .left {
   left: 0;
   width: 50%;
   z-index: 1;
 }
-.container main .content .right {
+main .content .right {
   right: 0;
   width: 60%;
   z-index: 0;
 }
-.container main .content .content-text {
+main .content .content-text {
   position: relative;
   z-index: 100;
   width: -moz-fit-content;
   width: fit-content;
   color: white;
 }
-.container main .content .content-text .content-text__box {
+main .content .content-text .content-text__box {
   display: flex;
   gap: 25px;
 }
-.container main .content .content-text .content-text__box .content-text__box--icon {
+main .content .content-text .content-text__box .content-text__box--icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,46 +249,46 @@
   border-radius: 50%;
   background-color: white;
 }
-.container main .content .content-text .content-text__box .content-text__box--icon img {
+main .content .content-text .content-text__box .content-text__box--icon img {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container main .content .content-text .content-text__box .content-text__box--title {
+main .content .content-text .content-text__box .content-text__box--title {
   display: flex;
   flex-direction: column;
   font-size: 30px;
   line-height: 1.3;
 }
-.container main .content .content-text .content-text__box .content-text__box--title .mainTitle {
+main .content .content-text .content-text__box .content-text__box--title .mainTitle {
   font-weight: 600;
 }
-.container main .content .content-text .content-text__body {
+main .content .content-text .content-text__body {
   margin-top: 25px;
   line-height: 1.4;
 }
-.container main .banner {
+main .banner {
   scroll-snap-align: start;
   position: relative;
   width: 100%;
   height: 100vh;
   padding-top: 120px;
 }
-.container main .banner .banner-bgBox {
+main .banner .banner-bgBox {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.container main .banner .banner-bgBox .banner-bg {
+main .banner .banner-bgBox .banner-bg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container main .banner .banner-text {
+main .banner .banner-text {
   position: relative;
   z-index: 1;
   width: -moz-fit-content;
@@ -309,23 +298,23 @@
   text-align: center;
   color: #18242e;
 }
-.container main .banner .banner-text .banner-text__title {
+main .banner .banner-text .banner-text__title {
   font-size: 36px;
   line-height: 52px;
   font-weight: 900;
 }
-.container main .banner .banner-text .banner-text__body {
+main .banner .banner-text .banner-text__body {
   margin-top: 12px;
   line-height: 1.4;
 }
-.container main .module {
+main .module {
   scroll-snap-align: start;
   position: relative;
   width: 100%;
   height: auto;
   padding: 60px 0px;
 }
-.container main .module .module-bg {
+main .module .module-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -333,13 +322,13 @@
   width: 100%;
   height: 100%;
 }
-.container main .module .module-bg img {
+main .module .module-bg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.container main .module .downloadApp-layout {
+main .module .downloadApp-layout {
   position: relative;
   z-index: 1;
   display: flex;
@@ -351,147 +340,45 @@
   margin: 0 auto;
   padding: 0 calc(50vw - 675px);
 }
-.container main .module .downloadApp-layout .downloadApp-layout__logo {
+main .module .downloadApp-layout .downloadApp-layout__logo {
   width: 280px;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content {
+main .module .downloadApp-layout .downloadApp-layout__content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: -moz-fit-content;
   width: fit-content;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text {
+main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text {
   margin-bottom: 30px;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text .title {
+main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text .title {
   color: white;
   font-size: 32px;
   line-height: 38px;
   font-weight: 600;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges {
+main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges {
   width: -moz-fit-content;
   width: fit-content;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges {
+main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn {
+main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn {
   flex: 1;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a {
+main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a {
   width: auto;
   height: 48px;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a > img {
+main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.container footer {
-  scroll-snap-align: start;
-  position: relative;
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  background-color: white;
-}
-.container footer .footer-content {
-  width: 100%;
-  padding: 0px calc(50vw - 675px);
-}
-.container footer .footer-content .footer-contentWrap {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 80px;
-  grid-row-gap: 0px;
-  width: 100%;
-  padding: 40px 0px;
-  color: #18242e;
-  font-weight: 400;
-  line-height: 1.4;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 25px;
-  grid-row-gap: 8px;
-  font-size: 14px;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-links .link {
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-social .socialBtn {
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  border-radius: 50%;
-  border: 2px solid #0c1c3e;
-  color: #0c1c3e;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-social .socialBtn:hover {
-  border: 2px solid #e1306d;
-  color: #e1306d;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-logos {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 24px;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-logos .footer-contentWrap-logo {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 100%;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-logos .footer-contentWrap-logo img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-logos .company {
-  width: 150px;
-}
-.container footer .footer-content .footer-contentWrap .footer-contentWrap-logos .niantic {
-  width: 60px;
-}
-.container footer .footer-legal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  width: 100%;
-  padding: 8px 0px;
-  color: #0c1c3e;
-  font-weight: 400;
-  line-height: 1.4;
-  background: #e2f7f7;
-}
-.container footer .footer-legal .footer-legal-link::after {
-  content: ">";
-  margin: 0px 10px;
-  padding: 2px 6px;
-  border-radius: 50%;
-  color: white;
-  background-color: rgb(108, 169, 185);
-}
-.container footer .footer-legal .footer-legal-link:hover::after {
-  background-color: rgb(65, 132, 148);
 }/*# sourceMappingURL=main.css.map */
