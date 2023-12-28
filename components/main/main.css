@@ -1,11 +1,22 @@
-main {
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0c1c3e;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container main {
   position: relative;
   width: 90%;
   height: auto;
   background-color: #0f224a;
   margin: 0 auto;
 }
-main .hero {
+.container main .hero {
   scroll-snap-align: start;
   position: relative;
   display: flex;
@@ -14,17 +25,17 @@ main .hero {
   height: auto;
   padding: 80px 190px 40px 190px;
 }
-main .hero .hero-vedio {
+.container main .hero .hero-vedio {
   width: 100%;
   border: 20px solid white;
 }
-main .hero .hero-vedio > video {
+.container main .hero .hero-vedio > video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .hero .hero-videoControls {
+.container main .hero .hero-videoControls {
   position: absolute;
   right: 225px;
   bottom: 80px;
@@ -34,7 +45,7 @@ main .hero .hero-videoControls {
   width: 80px;
   height: 80px;
 }
-main .hero .hero-videoControls > button {
+.container main .hero .hero-videoControls > button {
   width: 70px;
   height: 70px;
   border: none;
@@ -44,10 +55,10 @@ main .hero .hero-videoControls > button {
   font-size: 40px;
   line-height: 40px;
 }
-main .hero .hero-videoControls > button:hover {
+.container main .hero .hero-videoControls > button:hover {
   cursor: pointer;
 }
-main .news {
+.container main .news {
   scroll-snap-align: start;
   position: relative;
   display: flex;
@@ -59,7 +70,7 @@ main .news {
   padding: 60px calc(50vw - 675px);
   overflow: hidden;
 }
-main .news .news-bg {
+.container main .news .news-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -69,7 +80,7 @@ main .news .news-bg {
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .news .news-animation {
+.container main .news .news-animation {
   position: absolute;
   opacity: 0;
   transform: scale(0);
@@ -89,26 +100,26 @@ main .news .news-animation {
     opacity: 0;
   }
 }
-main .news .fire1 {
+.container main .news .fire1 {
   top: 60px;
   right: 0;
   animation-delay: 1.1s;
 }
-main .news .fire2 {
+.container main .news .fire2 {
   top: 30px;
   left: 100px;
 }
-main .news .fire3 {
+.container main .news .fire3 {
   bottom: -350px;
   left: -200px;
   animation-delay: 0.6s;
 }
-main .news .fire4 {
+.container main .news .fire4 {
   bottom: -80px;
   right: -100px;
   animation-delay: 1.7s;
 }
-main .news .news-title {
+.container main .news .news-title {
   z-index: 1;
   width: 100%;
   margin: 40px 0px 60px 0px;
@@ -117,7 +128,7 @@ main .news .news-title {
   text-align: center;
   color: #18242e;
 }
-main .news .news-postBox {
+.container main .news .news-postBox {
   position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -128,28 +139,28 @@ main .news .news-postBox {
   width: 100%;
   height: auto;
 }
-main .news .news-postBox .post {
+.container main .news .news-postBox .post {
   width: 100%;
   height: 100%;
   border-radius: 12px;
   overflow: hidden;
 }
-main .news .news-postBox .post .postContent {
+.container main .news .news-postBox .post .postContent {
   position: relative;
   width: 100%;
   height: 100%;
 }
-main .news .news-postBox .post .postContent img {
+.container main .news .news-postBox .post .postContent img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s linear;
 }
-main .news .news-postBox .post .postContent img:hover {
+.container main .news .news-postBox .post .postContent img:hover {
   transform: scale(1.1);
 }
-main .news .news-postBox .post .postContent .postContent-text {
+.container main .news .news-postBox .post .postContent .postContent-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -162,36 +173,36 @@ main .news .news-postBox .post .postContent .postContent-text {
   font-weight: 700;
   line-height: 1.4;
 }
-main .news .news-postBox .post .postContent .postContent-text .date {
+.container main .news .news-postBox .post .postContent .postContent-text .date {
   font-size: 12px;
   margin-bottom: 4px;
 }
-main .news .news-postBox .post .postContent .postContent-text .title {
+.container main .news .news-postBox .post .postContent .postContent-text .title {
   font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main .news .news-postBox .grid1 {
+.container main .news .news-postBox .grid1 {
   grid-area: 1/1/3/4;
 }
-main .news .news-postBox .grid2 {
+.container main .news .news-postBox .grid2 {
   grid-area: 1/4/3/7;
 }
-main .news .news-postBox .grid3 {
+.container main .news .news-postBox .grid3 {
   grid-area: 3/1/4/3;
 }
-main .news .news-postBox .grid4 {
+.container main .news .news-postBox .grid4 {
   grid-area: 3/3/4/5;
 }
-main .news .news-postBox .grid5 {
+.container main .news .news-postBox .grid5 {
   grid-area: 3/5/4/7;
 }
-main .news .news-btn {
+.container main .news .news-btn {
   z-index: 1;
   margin-top: 50px;
 }
-main .news .news-btn a {
+.container main .news .news-btn a {
   padding: 8px 24px;
   border: 2px solid #0061af;
   border-radius: 999px;
@@ -200,10 +211,10 @@ main .news .news-btn a {
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-main .news .news-btn a:hover {
+.container main .news .news-btn a:hover {
   background-color: #d1eefd;
 }
-main .content {
+.container main .content {
   scroll-snap-align: start;
   position: relative;
   width: 100%;
@@ -212,35 +223,35 @@ main .content {
   align-items: center;
   padding: calc(50vw - 675px);
 }
-main .content .content-bg {
+.container main .content .content-bg {
   position: absolute;
   top: 0;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .content .left {
+.container main .content .left {
   left: 0;
   width: 50%;
   z-index: 1;
 }
-main .content .right {
+.container main .content .right {
   right: 0;
   width: 60%;
   z-index: 0;
 }
-main .content .content-text {
+.container main .content .content-text {
   position: relative;
   z-index: 100;
   width: -moz-fit-content;
   width: fit-content;
   color: white;
 }
-main .content .content-text .content-text__box {
+.container main .content .content-text .content-text__box {
   display: flex;
   gap: 25px;
 }
-main .content .content-text .content-text__box .content-text__box--icon {
+.container main .content .content-text .content-text__box .content-text__box--icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,46 +260,46 @@ main .content .content-text .content-text__box .content-text__box--icon {
   border-radius: 50%;
   background-color: white;
 }
-main .content .content-text .content-text__box .content-text__box--icon img {
+.container main .content .content-text .content-text__box .content-text__box--icon img {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .content .content-text .content-text__box .content-text__box--title {
+.container main .content .content-text .content-text__box .content-text__box--title {
   display: flex;
   flex-direction: column;
   font-size: 30px;
   line-height: 1.3;
 }
-main .content .content-text .content-text__box .content-text__box--title .mainTitle {
+.container main .content .content-text .content-text__box .content-text__box--title .mainTitle {
   font-weight: 600;
 }
-main .content .content-text .content-text__body {
+.container main .content .content-text .content-text__body {
   margin-top: 25px;
   line-height: 1.4;
 }
-main .banner {
+.container main .banner {
   scroll-snap-align: start;
   position: relative;
   width: 100%;
   height: 100vh;
   padding-top: 120px;
 }
-main .banner .banner-bgBox {
+.container main .banner .banner-bgBox {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-main .banner .banner-bgBox .banner-bg {
+.container main .banner .banner-bgBox .banner-bg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .banner .banner-text {
+.container main .banner .banner-text {
   position: relative;
   z-index: 1;
   width: -moz-fit-content;
@@ -298,23 +309,23 @@ main .banner .banner-text {
   text-align: center;
   color: #18242e;
 }
-main .banner .banner-text .banner-text__title {
+.container main .banner .banner-text .banner-text__title {
   font-size: 36px;
   line-height: 52px;
   font-weight: 900;
 }
-main .banner .banner-text .banner-text__body {
+.container main .banner .banner-text .banner-text__body {
   margin-top: 12px;
   line-height: 1.4;
 }
-main .module {
+.container main .module {
   scroll-snap-align: start;
   position: relative;
   width: 100%;
   height: auto;
   padding: 60px 0px;
 }
-main .module .module-bg {
+.container main .module .module-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -322,13 +333,13 @@ main .module .module-bg {
   width: 100%;
   height: 100%;
 }
-main .module .module-bg img {
+.container main .module .module-bg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .module .downloadApp-layout {
+.container main .module .downloadApp-layout {
   position: relative;
   z-index: 1;
   display: flex;
@@ -340,43 +351,43 @@ main .module .downloadApp-layout {
   margin: 0 auto;
   padding: 0 calc(50vw - 675px);
 }
-main .module .downloadApp-layout .downloadApp-layout__logo {
+.container main .module .downloadApp-layout .downloadApp-layout__logo {
   width: 280px;
 }
-main .module .downloadApp-layout .downloadApp-layout__content {
+.container main .module .downloadApp-layout .downloadApp-layout__content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: -moz-fit-content;
   width: fit-content;
 }
-main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text {
+.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text {
   margin-bottom: 30px;
 }
-main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text .title {
+.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text .title {
   color: white;
   font-size: 32px;
   line-height: 38px;
   font-weight: 600;
 }
-main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges {
+.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges {
   width: -moz-fit-content;
   width: fit-content;
 }
-main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges {
+.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
 }
-main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn {
+.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn {
   flex: 1;
 }
-main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a {
+.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a {
   width: auto;
   height: 48px;
 }
-main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a > img {
+.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
