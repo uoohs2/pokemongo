@@ -110,4 +110,14 @@
 }
 .container footer .footer-legal .footer-legal-link:hover::after {
   background-color: rgb(65, 132, 148);
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    scroll-snap-align: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    scroll-snap-align: none;
+  }
 }/*# sourceMappingURL=footer.css.map */
