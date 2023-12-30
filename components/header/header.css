@@ -84,7 +84,8 @@ header .burger {
   header > .wrapper .logoBox {
     width: 100px;
   }
-  header > .wrapper .navbar, header > .wrapper .languageBox {
+  header > .wrapper .navbar,
+  header > .wrapper .languageBox {
     display: none;
   }
   header > .wrapper .burger {

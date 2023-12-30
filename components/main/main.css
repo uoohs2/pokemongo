@@ -124,7 +124,7 @@
   width: 100%;
   margin: 40px 0px 60px 0px;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   color: #18242e;
 }
@@ -217,16 +217,19 @@
 .container main .content {
   scroll-snap-align: start;
   position: relative;
-  width: 100%;
-  height: 550px;
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 300px;
   padding: calc(50vw - 675px);
 }
 .container main .content .content-bg {
   position: absolute;
   top: 0;
   height: 100%;
+}
+.container main .content .content-bg img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -282,6 +285,7 @@
 .container main .banner {
   scroll-snap-align: start;
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 100vh;
   padding-top: 120px;
@@ -415,6 +419,56 @@
     font-size: 30px;
     line-height: 30px;
   }
+  .container main .news {
+    padding: 60px 0px;
+  }
+  .container main .news .news-animation,
+  .container main .news .fire1,
+  .container main .news .fire2,
+  .container main .news .fire3,
+  .container main .news .fire4,
+  .container main .news .fire5 {
+    display: none;
+  }
+  .container main .news .news-title {
+    margin: 0px 0px 60px 0px;
+  }
+  .container main .news .news-postBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px calc(50vw - 220px);
+  }
+  .container main .news .news-postBox .post .postContent img {
+    height: 250px;
+  }
+  .container main .news .news-btn {
+    margin-top: 30px;
+  }
+  .container main .content {
+    flex-direction: column;
+    height: 100vh;
+    padding: 40px;
+  }
+  .container main .content .content-bg {
+    top: auto;
+    left: 0;
+    height: auto;
+  }
+  .container main .content .content-bg img {
+    height: 100%;
+  }
+  .container main .content .left {
+    top: 0;
+    width: 110%;
+    height: 40%;
+  }
+  .container main .content .right {
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -447,23 +501,33 @@
     font-size: 28px;
   }
   .container main .news .news-postBox {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    justify-content: flex-start;
     width: 100%;
     height: 200px;
+    padding: 0px;
     scroll-snap-type: x mandatory;
     overflow: auto;
   }
+  .container main .news .news-postBox::-webkit-scrollbar {
+    display: none;
+  }
   .container main .news .news-postBox .post {
-    scroll-snap-align: start;
+    scroll-snap-align: end;
     width: 300px;
-    height: 100%;
+    border-radius: 6px;
     margin-left: 15px;
     grid-area: auto;
   }
+  .container main .news .news-postBox .post:nth-child(5) {
+    scroll-snap-align: start;
+    margin-right: 15px;
+  }
   .container main .news .news-btn {
-    margin: 0px;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
