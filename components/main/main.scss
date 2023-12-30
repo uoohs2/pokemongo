@@ -458,7 +458,7 @@
       .content {
         flex-direction: column;
         height: 100vh;
-        padding: 60px 20px;
+        padding: 40px 20px;
         .content-bg {
           top: auto;
           left: 0;
@@ -564,6 +564,7 @@
         }
       }
       .content {
+        padding: 60px 20px;
         .content-text {
           .content-text__box {
             .content-text__box--title {
