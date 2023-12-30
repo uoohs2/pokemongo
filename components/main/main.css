@@ -1,8 +1,22 @@
+:root {
+  --primary-navy-300: #0c1c3e;
+  --primary-navy-200: #0f224a;
+  --primary-navy-100: #0061af;
+  --secondary-red-100: #e1306d;
+  --secondary-green-100: #24cbaa;
+  --secondary-yellow-100: #f7cc46;
+  --color-navy: #18242e;
+  --color-black: #000;
+  --color-white: #fff;
+  --bg-skyblue-50: #d1eefd;
+  --bg-teal-50: #e2f7f7;
+}
+
 .container {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #0c1c3e;
+  background-color: var(--primary-navy-300);
   scroll-snap-type: y mandatory;
   overflow: auto;
 }
@@ -13,7 +27,7 @@
   position: relative;
   width: 90%;
   height: auto;
-  background-color: #0f224a;
+  background-color: var(--primary-navy-200);
   margin: 0 auto;
 }
 .container main .hero {
@@ -27,7 +41,7 @@
 }
 .container main .hero .hero-vedio {
   width: 100%;
-  border: 20px solid white;
+  border: 20px solid var(--color-white);
 }
 .container main .hero .hero-vedio > video {
   width: 100%;
@@ -50,7 +64,7 @@
   height: 70px;
   border: none;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--color-white);
   opacity: 0.8;
   font-size: 40px;
   line-height: 40px;
@@ -126,7 +140,7 @@
   font-size: 36px;
   font-weight: 900;
   text-align: center;
-  color: #18242e;
+  color: var(--color-navy);
 }
 .container main .news .news-postBox {
   position: relative;
@@ -169,7 +183,7 @@
   height: auto;
   padding: 24px 32px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(8, 34, 78, 0.8) 100%);
-  color: white;
+  color: var(--color-white);
   font-weight: 700;
   line-height: 1.4;
 }
@@ -204,15 +218,15 @@
 }
 .container main .news .news-btn a {
   padding: 8px 24px;
-  border: 2px solid #0061af;
+  border: 2px solid var(--primary-navy-100);
   border-radius: 999px;
-  background-color: #fff;
-  color: #0061af;
+  background-color: var(--color-white);
+  color: var(--primary-navy-100);
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
 .container main .news .news-btn a:hover {
-  background-color: #d1eefd;
+  background-color: var(--bg-skyblue-50);
 }
 .container main .content {
   scroll-snap-align: start;
@@ -248,7 +262,7 @@
   z-index: 100;
   width: -moz-fit-content;
   width: fit-content;
-  color: white;
+  color: var(--color-white);
 }
 .container main .content .content-text .content-text__box {
   display: flex;
@@ -262,7 +276,7 @@
   height: 80px;
   padding: 20px;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--color-white);
 }
 .container main .content .content-text .content-text__box .content-text__box--icon img {
   width: 100%;
@@ -312,7 +326,7 @@
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
-  color: #18242e;
+  color: var(--color-navy);
 }
 .container main .banner .banner-text .banner-text__title {
   font-size: 36px;
@@ -370,7 +384,7 @@
   margin-bottom: 30px;
 }
 .container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text .title {
-  color: white;
+  color: var(--color-white);
   font-size: 32px;
   line-height: 38px;
   font-weight: 600;
@@ -401,6 +415,7 @@
   }
   .container main {
     width: 100%;
+    overflow: hidden;
   }
   .container main .hero {
     padding: 80px 60px 40px;
@@ -499,7 +514,7 @@
     padding: 80px 20px 20px;
   }
   .container main .hero .hero-vedio {
-    border: 12px solid white;
+    border: 12px solid var(--color-white);
   }
   .container main .hero .hero-videoControls {
     right: 35px;
