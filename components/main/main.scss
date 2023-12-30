@@ -391,7 +391,7 @@
                   > img {
                     width: 100%;
                     height: 48px;
-                    object-fit: cover;
+                    object-fit: contain;
                   }
                 }
               }
@@ -458,7 +458,7 @@
       .content {
         flex-direction: column;
         height: 100vh;
-        padding: 40px 20px;
+        padding: 60px 20px;
         .content-bg {
           top: auto;
           left: 0;

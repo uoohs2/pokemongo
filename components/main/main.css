@@ -406,8 +406,8 @@
 .container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a > img {
   width: 100%;
   height: 48px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -465,7 +465,7 @@
   .container main .content {
     flex-direction: column;
     height: 100vh;
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
   .container main .content .content-bg {
     top: auto;
