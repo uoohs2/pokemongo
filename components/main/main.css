@@ -465,7 +465,7 @@
   .container main .content {
     flex-direction: column;
     height: 100vh;
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
   .container main .content .content-bg {
     top: auto;
@@ -565,9 +565,6 @@
   }
   .container main .news .news-btn {
     margin-top: 0px;
-  }
-  .container main .content {
-    padding: 60px 20px;
   }
   .container main .content .content-text .content-text__box .content-text__box--title {
     font-size: 24px;
