@@ -260,14 +260,15 @@
   align-items: center;
   width: 80px;
   height: 80px;
+  padding: 20px;
   border-radius: 50%;
   background-color: white;
 }
 .container main .content .content-text .content-text__box .content-text__box--icon img {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .container main .content .content-text .content-text__box .content-text__box--title {
   display: flex;
@@ -276,7 +277,7 @@
   line-height: 1.3;
 }
 .container main .content .content-text .content-text__box .content-text__box--title .mainTitle {
-  font-weight: 600;
+  font-weight: 900;
 }
 .container main .content .content-text .content-text__body {
   margin-top: 25px;
@@ -384,16 +385,13 @@
   align-items: center;
   gap: 12px;
 }
-.container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn {
-  flex: 1;
-}
 .container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a {
   width: auto;
-  height: 48px;
+  height: 100%;
 }
 .container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges .appBadges-btn > a > img {
   width: 100%;
-  height: 100%;
+  height: 48px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -443,13 +441,16 @@
   .container main .news .news-postBox .post .postContent img {
     height: 250px;
   }
+  .container main .news .news-postBox .post .postContent img:hover {
+    transform: none;
+  }
   .container main .news .news-btn {
     margin-top: 30px;
   }
   .container main .content {
     flex-direction: column;
     height: 100vh;
-    padding: 40px;
+    padding: 40px 20px;
   }
   .container main .content .content-bg {
     top: auto;
@@ -468,6 +469,26 @@
     bottom: 0;
     width: 100%;
     height: 60%;
+  }
+  .container main .banner {
+    min-height: 800px;
+    padding-top: 80px;
+  }
+  .container main .module .downloadApp-layout {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container main .module .downloadApp-layout .downloadApp-layout__content {
+    justify-content: center;
+  }
+  .container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text {
+    text-align: center;
+  }
+  .container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--text .title {
+    font-size: 24px;
+  }
+  .container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -529,5 +550,27 @@
   }
   .container main .news .news-btn {
     margin-top: 0px;
+  }
+  .container main .content .content-text .content-text__box .content-text__box--title {
+    font-size: 24px;
+  }
+  .container main .content .content-text .content-text__body {
+    font-size: 12px;
+  }
+  .container main .banner {
+    min-height: 460px;
+    padding-top: 30px;
+  }
+  .container main .banner .banner-text .banner-text__title {
+    font-size: 28px;
+  }
+  .container main .banner .banner-text .banner-text__body {
+    padding: 0px 20px;
+  }
+  .container main .module .downloadApp-layout .downloadApp-layout__content {
+    align-items: center;
+  }
+  .container main .module .downloadApp-layout .downloadApp-layout__content .downloadApp-layout__content--badges .appBadges {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
